@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/index.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500;600;700;800;900&display=swap" rel="stylesheet">
+    <title>Accueil</title>
+</head>
+
+<body>  
+
+    <header class="main-head">
+        <nav class="navbar">
+            <a href="#" class="logo">Libra</a>
+            <div class="nav-links">
+                <ul>
+                    <li class="active"><a href="#">Accueil</a></li>
+                    <li><a href="informations.php">Informations</a></li>
+                    <li><a href="#">Contacts</a></li>
+                    <li><a href="#">Formulaire</a></li>
+                    <li><a href="#">Nos Sites</a></li>
+                </ul>
+            </div>
+            <img src="css/menu.jpg" alt="menu" class="menu-hamburger">
+
+        </nav>
+        <div class="background">
+            <div class="img">
+                <div class="title">
+                    <h1>Bienvenue sur Libra !</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+
+<section class="contenu">
+    <div class="page1">
+        <div class="text-presentation">
+            <h1>Qu'est-ce Libra ? </h1>
+            <p>Libra est le nom donné à une team de joueurs s'étant rencontré sur Internet. Initialement composé de joueur IRL, le groupe de personnes a 
+                su se diversifier au fil des années tout comme les jeux auxquels ils ont pu jouer.
+            </p>
+            <img src="css/swak.png" alt="Un membre fondateur du serveur">
+        </div>
+    </div>
+    <div class="page2">
+        <div class="membres">
+
+
+            <div class="cards">
+                <div class="cards-img alpha"></div>
+                <h1>Alpha</h1>
+                <p>Membre FONDATEUR ayant eu l'idée de créer le premier serveur MC.</p>
+            </div>
+
+            <div class="cards">
+                <div class="cards-img swaky"></div>
+                <h1>Swaky</h1>
+                <p>Membre pilier de Libra ayant contribué au serveur en activité et en achat de serveur.</p>
+            </div>
+
+            <div class="cards">
+                <div class="cards-img xartoxe"></div>
+                <h1>Xartoxe</h1>
+                <p>Touriste sur les serveurs.</p>
+            </div>
+
+            <div class="cards">
+                <div class="cards-img dada"></div>
+                <h1>Dada</h1>
+                <p>Membre pilier de Libra ayant contribué au serveur en activité et en achat de serveur.</p>
+            </div>
+
+            <div class="cards">
+                <div class="cards-img fire"></div>
+                <h1>Fire</h1>
+                <p>Membre Touriste et inéxistant pour toujours.</p>
+            </div>
+
+            <div class="cards">
+                <div class="cards-img zeri"></div>
+                <h1>Zeri</h1>
+                <p>Dernier Membre pilier de Libra ayant contribué au serveur en activité et en achat de serveur.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+</body>
+
+<script>
+    const menuHamburger = document.querySelector(".menu-hamburger")
+    const navLinks = document.querySelector(".nav-links")
+
+    menuHamburger.addEventListener('click',()=>{
+    navLinks.classList.toggle('mobile-menu')
+    })
+</script>
+
+</html>

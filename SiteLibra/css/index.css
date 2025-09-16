@@ -1,0 +1,344 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    
+}
+
+
+body { 
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+.main-head{
+    height: 100vh;
+    width: 100vw;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.1) 0px 0px 0px 1px;
+    
+}
+
+
+.title{
+    position: relative;
+    top: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title h1{
+    z-index: 0;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 3vw;
+    text-shadow: 0 1px 0 #818181, 
+                   0 2px 0 #7a7a7a,
+                   0 3px 0 #575757,
+
+                   0 6px 1px rgba(0,0,0,.1),
+                   0 0 5px rgba(0,0,0,.1),
+                   0 1px 3px rgba(0,0,0,.3),
+                   0 3px 5px rgba(0,0,0,.2),
+                   0 5px 10px rgba(0,0,0,.25),
+                   0 10px 10px rgba(0,0,0,.2),
+                   0 20px 20px rgba(0,0,0,.15);
+                   transition: 0.5s;
+
+}
+
+.navbar{ 
+    position: absolute;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 5vh;
+    box-sizing: border-box;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.1) 0px 0px 0px 1px;
+    
+}
+
+.navbar a {
+    font-size: 1.2em;
+    color: black;
+    transition: 0.5s;
+}
+
+
+
+.navbar .logo{
+    font-size: 2em;
+    font-weight: bold;
+    color:rgb(76, 43, 226);
+}
+
+.navbar .nav-links ul{
+    display: flex;
+
+}
+
+.navbar .nav-links ul li{
+    margin:0 20px;
+
+}
+
+
+ 
+ul li a:hover{
+    color:rgb(76, 43, 226);
+	transform: translate(-20%,-1px);
+
+}
+
+.logo:hover{
+    color:rgb(76, 43, 226);
+	transform: translate(-20%,-1px);
+
+}
+
+.navbar .menu-hamburger{
+    display: none;
+    position: absolute;
+    right: 35px;
+    top: 20px;
+    width: 100px;
+
+}
+
+.background{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.img{
+    position: absolute;
+    z-index: -5;
+    top: 100px;
+    height: 80vh;
+    width: 96vw;
+    background-position:center ;
+    background-size: cover;
+    animation: animate 16s ease-in-out infinite;
+    box-sizing:border-box;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+.contenu h1{
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.contenu p{
+    font-size: 1.5em;
+}
+
+.page1{
+    height: 100vh;
+    width: 100vw;
+    background-color: #ffe6b8;
+    display: flex;
+    justify-content: center;
+}
+
+
+.text-presentation{
+    margin: 10%;
+    height: 300px;
+}
+.text-presentation img{
+    margin-top: 5%;
+    margin-left: 40%;
+    max-width: 40vw;
+    max-height: auto;
+    border: solid rgb(76, 43, 226) 10px;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.page2{
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.membres{
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cards{
+
+ background-color: rgb(185, 169, 255);
+ width: 250px;
+ height: 600px;
+ margin: 20px;
+ border-radius: 15px;
+ box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+ transition: 0.5s;
+}
+
+.cards h1{
+    margin-left: 15px;
+    color: rgb(0, 0, 0);
+    font-size: 2.5em;
+}
+
+.cards p{
+    margin-left: 10px;
+}
+
+.cards-img{
+    background-color: aqua;
+    background-position:center ;
+    background-size: cover;
+    height: 250px;
+    border-radius: 15px 15px 0 0 ;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    
+}
+
+.cards:hover{
+    width: 300px;
+    height: 650px;
+    background-color: rgb(97, 62, 255);
+    color: beige;
+
+
+}
+
+.alpha{
+    background-image: url(alpha.png);
+}
+.swaky{
+    background-image: url(swaky.png);
+}
+.xartoxe{
+    background-image: url(xartoxe.png);
+}
+.dada{
+    background-image: url(dada.png);
+}
+.fire{
+    background-image: url(fire.png);
+}
+.zeri{
+    background-image: url(zeri.png);
+}
+
+
+@keyframes animate{
+    0%{
+        background-image: url(font.png);
+    }
+    25%{
+        background-image: url(font2.png);
+    }
+    50%{
+        background-image: url(font3.png);
+    }
+    75%{
+        background-image: url(font4.png);
+    }
+    100%{
+        background-image: url(font5.png);
+    }
+
+}
+
+@media screen and (max-width: 900px){
+
+
+
+    .navbar{
+        padding: 0;
+        height: 100px;
+    }
+
+    .navbar .logo{
+        position: absolute;
+        top: 30px;
+        left: 30px;
+    }
+
+    .navbar .menu-hamburger{
+        margin-top: -20px;
+        z-index: 2;
+        display:block ;
+    }
+
+    .nav-links{
+        z-index: 1;
+        top: 0;
+        left: 0;
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.151);
+        backdrop-filter: blur(7px);
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: -100%;
+        transition: 0.5s ease;
+        box-sizing:border-box;
+    }
+
+    .mobile-menu{
+        margin-left: 0;
+    
+    
+    }
+
+    .nav-links ul{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+    }
+    .navbar .nav-links ul li{
+        margin:25px 0;
+        font-size: 1.2em;
+        font-weight: bold;
+    
+    }
+
+    .title h1{
+        font-size: 5vw;
+    }
+
+    .text-presentation img{
+        margin-left: 0;
+        max-width: 80vw;
+        max-height: auto;
+    }
+
+    .cards{
+        width: 150px;
+        height: 450px;
+        margin: 10px;
+       }
+     .cards-img{
+        height: 150px;
+     }
+     .cards h1{
+        font-size: 2em;
+     }
+     .cards p{
+        font-size: 1em;
+     }
+    .cards:hover{
+        width: 170px;
+        height: 470px;
+        background-color: rgb(97, 62, 255);
+        color: beige;
+    }
+
+}
